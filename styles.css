@@ -126,3 +126,22 @@ section {
   margin: 15px auto;
   display: block;
 }
+
+footer {
+  background-color: #1B83E2;
+  color: white;
+  text-align: center; /*Centralizando o texto do roda pé*/
+  font-size: 0.8em;
+  padding: 5px;
+}
+
+footer a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--cor1);
+}
