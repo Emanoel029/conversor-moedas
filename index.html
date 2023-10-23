@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Moedas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Conversor de Moedas</h1>
+      </header>
+
+      <main>
+        <label>
+          Conversor <b>de:</b>
+          <select>
+            <option>R$ Real Brasileiro</option>
+          </select>
+        </label>
+
+        <label>
+          Converter <b>para:</b>
+          <select id="select">
+            <option>US$ Dólar</option>
+            <option>€ Euro</option>
+            <option>Bitcoin</option>
+          </select>
+        </label>
+
+        <label>
+          Valor:
+          <input id="input-reais" placeholder="R$" />
+        </label>
+        <button id="button" type="button">Converter</button>
+
+        <section>
+          <div class="section-container">
+            <img src="./assets/brasil.png" alt="Bandeira-Brasil" />
+            <p class="text-name">Real</p>
+            <p id="reais-value" class="text-value">R$ 0,00</p>
+          </div>
+
+          <img class="img-seta" src="./assets/seta.png" alt="Seta-para-baixo" />
+
+          <div class="section-container">
+            <img
+              src="./assets/estados-unidos.png"
+              alt="Bandeira-Pais"
+              id="currency-img"
+            />
+            <p class="text-name" id="currency-name">Dólar Americano</p>
+            <p id="text-value" class="text-value">$ 0,00</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="./scripts.js"></script>
+</html>
